@@ -1,28 +1,30 @@
 package servedir
 
 import (
-	"fmt"
 	"log"
+	"net"
 	"net/http"
+	"strconv"
 
 	"github.com/spf13/cobra"
 )
 
 func Serve(cmd *cobra.Command, args []string) {
 	log.Println("Opening File Server")
-	portInt, err := cmd.Flags().GetInt("port")
+	portFlag, err := cmd.Flags().GetInt("port")
 	if err != nil {
 		log.Fatalln(err)
 	}
-	portStr := fmt.Sprintf(":%v", portInt)
+
+	port := net.JoinHostPort("", strconv.Itoa(portFlag))
 
 	dir, err := cmd.Flags().GetString("dir")
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-	log.Printf("Serving directory %s on port %s\n", dir, portStr)
+	log.Printf("Serving directory %s on port %s\n", dir, port)
 
-	err = http.ListenAndServe(portStr, http.FileServer(http.Dir(dir)))
+	err = http.ListenAndServe(port, http.FileServer(http.Dir(dir)))
 	log.Fatalln(err)
 }
