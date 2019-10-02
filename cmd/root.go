@@ -16,13 +16,9 @@ var cfgFile string
 
 var rootCmd = &cobra.Command{
 	Use:   "servedir",
-	Short: "A brief description of your application",
-	Long: `A longer description that spans multiple lines and likely contains
-examples and usage of using your application. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "A simple file server",
+	Long: `servedir is a simple and lazy file server that generates a
+file server for the specified directory`,
 	Run: servedir.Serve,
 }
 
@@ -36,7 +32,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.test-cobra.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.servedir.yaml)")
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
