@@ -6,6 +6,11 @@ This code is literally to simplify my life by making it so that instead of typin
 
 Why did I do this? Because I'm a lazy guy who would rather make my life easier by writing less in the terminal.
 
+- [servedir](#servedir)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Now With Brotli Compression!!](#now-with-brotli-compression)
+    - [To adjust the settings](#to-adjust-the-settings)
 ## Installation
 
 ```bash
