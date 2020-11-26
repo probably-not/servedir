@@ -2,6 +2,14 @@
 
 
 [[projects]]
+  digest = "1:3bfdfb3f1e89263734e9dd6d65a00ad0d4886750061439b7da2a8ab753a2ecf4"
+  name = "github.com/andybalholm/brotli"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "729edfbcfeaad43a6412c185205501ec80773250"
+  version = "v1.0.1"
+
+[[projects]]
   digest = "1:abeb38ade3f32a92943e5be54f55ed6d6e3b6602761d74b4aab4c9dd45c18abd"
   name = "github.com/fsnotify/fsnotify"
   packages = ["."]
@@ -154,6 +162,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/andybalholm/brotli",
     "github.com/mitchellh/go-homedir",
     "github.com/spf13/cobra",
     "github.com/spf13/viper",
