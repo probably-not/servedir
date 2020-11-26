@@ -39,7 +39,7 @@ func init() {
 	rootCmd.Flags().IntP("port", "p", 8080, "port to listen on")
 	rootCmd.Flags().StringP("dir", "d", ".", "directory to serve")
 	rootCmd.Flags().BoolP("compression", "c", true, "whether or not to use brotli compression to compress the files")
-	rootCmd.Flags().IntP("compression-level", "cl", 11, "level of brotli compression to use (0-11)")
+	rootCmd.Flags().IntP("level", "l", 11, "level of brotli compression to use (0-11)")
 }
 
 // initConfig reads in config file and ENV variables if set.

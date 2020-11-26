@@ -34,7 +34,7 @@ func Serve(cmd *cobra.Command, args []string) {
 	handler := http.FileServer(http.Dir(dir))
 
 	if compression {
-		compressionLevel, err := cmd.Flags().GetInt("compression-level")
+		compressionLevel, err := cmd.Flags().GetInt("level")
 		if err != nil {
 			log.Fatalln(err)
 		}
