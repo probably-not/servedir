@@ -40,3 +40,31 @@ Or, using the shorthand:
 ```bash
 servedir -d /some/random/dir
 ```
+
+## Now With Brotli Compression!!
+
+Well, some time passed, and then I realized, what if I want to see how my files are compressed? So... I added some brotli compression!
+
+To serve files with compression, simply run the normal command. Compression and best compression is on by default.
+
+### To adjust the settings
+
+To turn off compression:
+```bash
+servedir --compression false
+```
+
+Or, using the shorthand:
+```bash
+servedir -c false
+```
+
+To change the level of compression (can be between 0 and 11):
+```bash
+servedir --level 1
+```
+
+Or, using the shorthand:
+```bash
+servedir -l 1
+```
