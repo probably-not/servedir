@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/coby-spotim/servedir/internal/servedir"
+	"github.com/probably-not/servedir/internal/servedir"
 
 	"github.com/spf13/cobra"
 
