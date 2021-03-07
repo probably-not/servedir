@@ -1,5 +1,5 @@
 /*
-Copyright © 2019 Coby Benveniste <coby.b@spot.im>
+Copyright © 2019 Coby Benveniste
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,7 @@ THE SOFTWARE.
 */
 package main
 
-import "github.com/coby-spotim/servedir/cmd"
+import "github.com/probably-not/servedir/cmd"
 
 func main() {
 	cmd.Execute()
