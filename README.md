@@ -14,8 +14,8 @@ Why did I do this? Because I'm a lazy guy who would rather make my life easier b
 ## Installation
 
 ```bash
-go get github.com/coby-spotim/servedir
-cd $(go env GOPATH)/src/github.com/coby-spotim/servedir
+go get github.com/probably-not/servedir
+cd $(go env GOPATH)/src/github.com/probably-not/servedir
 go install
 ```
 
